@@ -1,4 +1,4 @@
-export const Logo = (props: React.SVGProps<SVGSVGElement>) => (
+export const Logo = (props: React.HTMLAttributes<HTMLDivElement>) => (
     <div className="flex items-center gap-2" {...props}>
       <svg
         role="img"
@@ -29,4 +29,3 @@ export const Logo = (props: React.SVGProps<SVGSVGElement>) => (
       </span>
     </div>
   );
-  
