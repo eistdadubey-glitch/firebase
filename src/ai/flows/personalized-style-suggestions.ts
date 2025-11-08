@@ -18,9 +18,7 @@ const PersonalizedStyleSuggestionsInputSchema = z.object({
     .describe('Description of the user\'s body type.'),
 });
 
-export type PersonalizedStyleSuggestionsInput = z.infer
-  typeof PersonalizedStyleSuggestionsInputSchema
->;
+export type PersonalizedStyleSuggestionsInput = z.infer<typeof PersonalizedStyleSuggestionsInputSchema>;
 
 const PersonalizedStyleSuggestionsOutputSchema = z.object({
   styleSuggestions: z
@@ -28,9 +26,7 @@ const PersonalizedStyleSuggestionsOutputSchema = z.object({
     .describe('Personalized clothing style suggestions.'),
 });
 
-export type PersonalizedStyleSuggestionsOutput = z.infer
-  typeof PersonalizedStyleSuggestionsOutputSchema
->;
+export type PersonalizedStyleSuggestionsOutput = z.infer<typeof PersonalizedStyleSuggestionsOutputSchema>;
 
 // Mock function for static export
 export async function getPersonalizedStyleSuggestions(
